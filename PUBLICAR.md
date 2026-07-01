@@ -8,6 +8,36 @@
 
 ---
 
+## Titularidade e handover (ler antes de comprar o domínio)
+
+> Como a Stone é **cliente** (não a Dex), defina a propriedade dos ativos no começo. Assim, se o contrato terminar um dia, a passagem é limpa.
+
+**O site não tem refém:** é HTML/CSS estático. No pior caso, entrega-se a pasta `06-Site/` e o cliente hospeda onde quiser. Os ativos que importam na passagem de bastão são 3:
+
+1. **Domínio** (o mais crítico — é o endereço do site e do email).
+2. **Email / Google Workspace.**
+3. **GitHub + Vercel** (fácil, sem lock-in: transfere o repo ou reimporta na conta do cliente).
+
+### Onde o Google registra o domínio
+Comprar o domínio **dentro do Google Workspace** registra ele via **Squarespace** (parceiro que comprou o antigo Google Domains). O DNS fica no Squarespace. Importante: o Google/Squarespace vende **gTLDs** (`.com`, `.net`…), **NÃO vende `.com.br`**.
+
+| Se quiser… | Onde registra | Handover |
+|---|---|---|
+| `stonedecor.com` | Junto no Google Workspace (via Squarespace) | Transferir depois via Squarespace (auth code) — passa pela conta de quem comprou |
+| **`stonedecor.com.br`** (recomendado p/ marca local) | **Registro.br** (separado, exige CNPJ) | Mínimo — registrando no **CNPJ da Stone**, o domínio já é do cliente desde o dia 1 |
+
+### Modelo recomendado
+- **Domínio `.com.br` no Registro.br, sob o CNPJ da Stone Décor**, com você como contato técnico/admin.
+- **Google Workspace** criado no nome/cobrança da Stone, você como administrador.
+- **GitHub/Vercel** podem ficar na conta da Dex por praticidade (transferência é trivial).
+
+> Resultado: o ativo mais importante (domínio) e o email já nascem do cliente. No fim do contrato, você só **sai do acesso** — nada pra "devolver".
+
+### No contrato
+Inclua uma cláusula simples: *"Ao término, a Dex transfere domínio, email e código-fonte ao cliente em até X dias úteis."* Protege os dois lados.
+
+---
+
 ## 0. Antes de publicar — trocar os placeholders
 No site há marcadores que precisam virar dados reais:
 - **WhatsApp:** `wa.me/5543000000000` → número real (procure por `5543000000000` em `index.html`, `blog.html` e `blog/`).

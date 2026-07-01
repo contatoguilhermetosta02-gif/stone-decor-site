@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stonedecor.com.br/sitemap.xml
