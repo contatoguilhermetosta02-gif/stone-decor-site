@@ -12,4 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.setAttribute('aria-expanded', 'false');
     });
   });
+
+  var slides = document.querySelectorAll('.hero .bg');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (slides.length > 1 && !reduceMotion) {
+    var i = 0;
+    setInterval(function () {
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+    }, 6000);
+  }
 });
