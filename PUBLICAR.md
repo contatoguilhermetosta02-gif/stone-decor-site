@@ -40,7 +40,7 @@ Inclua uma cláusula simples: *"Ao término, a Dex transfere domínio, email e c
 
 ## 0. Antes de publicar — trocar os placeholders
 No site há marcadores que precisam virar dados reais:
-- **WhatsApp:** `wa.me/5543000000000` → número real (procure por `5543000000000` em `index.html`, `blog.html` e `blog/`).
+- **WhatsApp:** ✅ trocado para `wa.me/5543920036388` em todas as páginas.
 - **Projetos:** os 3 cards e os créditos `[@arquiteto]` em `index.html` → fotos e @ reais.
 - (Opcional) Instagram já aponta para `@stonedecorlondrina`.
 
